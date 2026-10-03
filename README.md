@@ -37,8 +37,19 @@ src/
 ## Sprints
 | Sprint | Fechas | Objetivo |
 |---|---|---|
-| 0 | 29/09 – 04/10 | Diseño UX/UI y setup del entorno |
-| 1 | 05/10 – 11/10 | Layout base, Inicio, Catálogo, Detalle |
-| 2 | 12/10 – 18/10 | Carrito, Checkout, Contacto |
-| 3 | 19/10 – 25/10 | Blog, Recomendador, Descargas, responsive |
-| Entrega | 26/10 | Presentación final |
+| 0 | 29/09 – 05/10 | Diseño UI/UX y setup del entorno colaborativo |
+| 1 | 29/09 – 05/10 | De Figma al Pull Request: layout, Inicio, Catálogo, Detalle |
+| 2 | 06/10 – 12/10 | Carrito y Checkout |
+| 3 | 13/10 – 19/10 | Blog y Contacto |
+| 4 | 20/10 – 26/10 | Recomendador, descargas digitales, responsive y entrega final |
+
+**Fuera de alcance (MVP):** Mis suscripciones / Planes, Reserva online e Iniciar sesión. Quedan en el diseño de Figma y en el backlog futuro.
+
+## Flujo de trabajo (de Figma al Pull Request)
+1. Tomar la tarea en ClickUp y pasarla a *In Progress*.
+2. `git checkout develop && git pull`
+3. `git checkout -b feature/huXX-nombre`
+4. Maquetar comparando con Figma, `npm run dev` para ver los cambios.
+5. `git add . && git commit -m "feat(HUXX): ..."` y `git push -u origin feature/huXX-nombre`
+6. En GitHub abrir Pull Request hacia `develop`, otro integrante revisa y aprueba.
+7. Merge y mover la tarea a *Done* en ClickUp.
