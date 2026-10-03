@@ -1,7 +1,8 @@
 export default function Inicio() {
   return (
-    <section>
+    <section className="contenedor">
       <h1>Inicio</h1>
+      <p>Pendiente de maquetar.</p>
     </section>
   )
 }

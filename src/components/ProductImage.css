@@ -1,0 +1,16 @@
+.imagen-vacia,
+.imagen-producto {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radio);
+}
+
+.imagen-vacia {
+  display: grid;
+  place-items: center;
+  background: var(--color-placeholder);
+  color: #5B6B5F; /* 4.5:1 sobre placeholder */
+  font-size: 0.875rem;
+}
+
+.imagen-producto { object-fit: cover; }

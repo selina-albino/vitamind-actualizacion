@@ -1,0 +1,9 @@
+.producto-card__enlace { text-decoration: none; display: block; }
+.producto-card__enlace:hover .producto-card__nombre { text-decoration: underline; }
+
+.producto-card__nombre {
+  margin: var(--space-2) 0 var(--space-1);
+  font-size: var(--escala-1);
+}
+
+.producto-card__precio { color: var(--color-texto-suave); margin: 0; }

@@ -1,7 +1,7 @@
 [
-  { "id": 1, "nombre": "Accesorios" },
-  { "id": 2, "nombre": "Bebidas Funcionales" },
-  { "id": 3, "nombre": "Recetas Digitales" },
-  { "id": 4, "nombre": "Snacks Saludables" },
-  { "id": 5, "nombre": "Suplementos" }
+  { "id": "snacks", "nombre": "Snacks Saludables", "descripcion": "Comidas energéticas y balanceadas para mantener tu energía a lo largo del día." },
+  { "id": "bebidas", "nombre": "Bebidas Funcionales", "descripcion": "Infusiones y bebidas diseñadas para apoyar tu salud mental y física." },
+  { "id": "suplementos", "nombre": "Suplementos", "descripcion": "Vitaminas y proteínas para complementar tu alimentación." },
+  { "id": "accesorios", "nombre": "Accesorios", "descripcion": "Shakers, botellas y bolsas para llevar tu estilo de vida a todas partes." },
+  { "id": "recetas", "nombre": "Recetas Digitales", "descripcion": "Guías paso a paso para cocinar con intención y bienestar integral." }
 ]
