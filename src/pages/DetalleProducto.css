@@ -1,0 +1,49 @@
+.detalle {
+  display: grid;
+  gap: var(--space-5);
+  padding-block: var(--space-6);
+  align-items: start;
+}
+
+.detalle__info h1 { font-size: var(--escala-4); font-weight: 500; margin-bottom: var(--space-1); }
+.detalle__precio { color: var(--color-texto-suave); font-size: var(--escala-2); }
+
+.detalle__estado { font-weight: 600; color: var(--color-primario); }
+.detalle__estado--agotado { color: var(--color-error); }
+
+/* ===== Cantidad ===== */
+.cantidad { margin-bottom: var(--space-4); }
+.cantidad > span { display: block; margin-bottom: var(--space-2); }
+.cantidad__control {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-primario);
+}
+.cantidad__control button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  background: transparent;
+  font-size: var(--escala-2);
+  color: var(--color-primario);
+  cursor: pointer;
+}
+.cantidad__control button:disabled { opacity: 0.4; cursor: not-allowed; }
+.cantidad__control output { min-width: 2rem; text-align: center; }
+
+/* ===== Acciones ===== */
+.detalle__acciones {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 20rem;
+  margin-bottom: var(--space-4);
+}
+.detalle__acciones .boton { border-radius: 0.25rem; text-align: center; }
+.detalle__acciones a[aria-disabled="true"] { pointer-events: none; opacity: 0.55; }
+
+.detalle__descripcion { color: var(--color-texto-suave); }
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  .detalle { grid-template-columns: 1fr 1fr; }
+}
