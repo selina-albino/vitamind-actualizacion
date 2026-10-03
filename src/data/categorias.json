@@ -1,0 +1,7 @@
+[
+  { "id": 1, "nombre": "Accesorios" },
+  { "id": 2, "nombre": "Bebidas Funcionales" },
+  { "id": 3, "nombre": "Recetas Digitales" },
+  { "id": 4, "nombre": "Snacks Saludables" },
+  { "id": 5, "nombre": "Suplementos" }
+]
