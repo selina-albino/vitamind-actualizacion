@@ -26,7 +26,7 @@ export default function Inicio() {
             <Link to="/blog" className="boton boton--borde">Ver blog</Link>
           </div>
         </div>
-        <ProductImage alt="Bowl de frutas y jugos naturales" className="hero__imagen" />
+        <ProductImage src="/img/inicio/hero.png" alt="Bowl de frutas y jugos naturales" className="hero__imagen" />
       </section>
 
       <section className="contenedor seccion" aria-labelledby="categorias-titulo">
@@ -36,7 +36,7 @@ export default function Inicio() {
           {categorias.map((c) => (
             <li key={c.id}>
               <Link to={`/productos?categoria=${c.id}`} className="categoria">
-                <ProductImage alt="" />
+                <ProductImage src={c.imagen} alt="" />
                 <h3>{c.nombre}</h3>
                 <p>{c.descripcion}</p>
               </Link>
@@ -72,7 +72,7 @@ export default function Inicio() {
           <p>Transforma tu estilo de vida con productos pensados para jóvenes adultos que buscan rendimiento, claridad mental y bienestar.</p>
           <Link to="/productos" className="boton boton--acento">Ver productos</Link>
         </div>
-        <ProductImage alt="Ensalada de palta y granada" />
+        <ProductImage src="/img/inicio/cta.png" alt="Ensalada de kiwi y granada" />
       </section>
     </>
   )
