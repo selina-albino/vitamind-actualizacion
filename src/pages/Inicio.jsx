@@ -26,7 +26,7 @@ export default function Inicio() {
             <Link to="/blog" className="boton boton--borde">Ver blog</Link>
           </div>
         </div>
-        <ProductImage src="/img/inicio/hero.png" alt="Bowl de frutas y jugos naturales" className="hero__imagen" />
+        <ProductImage src="/img/inicio/hero.webp" alt="Bowls de frutas y jugos naturales en una cocina" className="hero__imagen" />
       </section>
 
       <section className="contenedor seccion" aria-labelledby="categorias-titulo">
@@ -72,7 +72,7 @@ export default function Inicio() {
           <p>Transforma tu estilo de vida con productos pensados para jóvenes adultos que buscan rendimiento, claridad mental y bienestar.</p>
           <Link to="/productos" className="boton boton--acento">Ver productos</Link>
         </div>
-        <ProductImage src="/img/inicio/cta.png" alt="Ensalada de kiwi y granada" />
+        <ProductImage src="/img/inicio/cta.webp" alt="Ensalada de palta, kiwi y granada" />
       </section>
     </>
   )

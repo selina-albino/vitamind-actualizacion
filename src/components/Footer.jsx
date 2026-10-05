@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="contenedor footer__grid">
         <div>
-          <p className="footer__logo">Vita<span>mind</span></p>
+          <img src="/img/logo-vitamind.png" alt="Vitamind" width="160" height="56" className="footer__logo" />
           <p>Nutrición inteligente para una vida plena.</p>
         </div>
 

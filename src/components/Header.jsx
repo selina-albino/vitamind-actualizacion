@@ -13,7 +13,7 @@ export default function Header() {
     <header className="header">
       <div className="contenedor header__fila">
         <Link to="/" className="header__logo">
-          Vita<span>mind</span>
+          <img src="/img/logo-vitamind.png" alt="Vitamind, ir al inicio" width="160" height="56" />
         </Link>
 
         <nav aria-label="Principal" className="header__nav">
