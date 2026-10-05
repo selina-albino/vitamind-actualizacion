@@ -7,8 +7,7 @@
 
 .footer__grid { display: grid; gap: var(--space-5); }
 
-.footer__logo { font-size: var(--escala-3); font-weight: 800; margin-bottom: var(--space-2); }
-.footer__logo span { color: #C2410C; }
+.footer__logo { width: 8.5rem; height: auto; margin-bottom: var(--space-2); }
 
 .footer__titulo { font-size: var(--escala-2); text-transform: uppercase; font-weight: 500; }
 

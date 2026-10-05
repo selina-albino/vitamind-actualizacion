@@ -1,7 +1,32 @@
 [
-  { "id": "snacks", "nombre": "Snacks Saludables", "descripcion": "Comidas energéticas y balanceadas para mantener tu energía a lo largo del día.", "imagen": "/img/categorias/snacks.png" },
-  { "id": "bebidas", "nombre": "Bebidas Funcionales", "descripcion": "Infusiones y bebidas diseñadas para apoyar tu salud mental y física.", "imagen": "/img/categorias/bebidas.png" },
-  { "id": "suplementos", "nombre": "Suplementos", "descripcion": "Vitaminas y proteínas para complementar tu alimentación.", "imagen": "/img/categorias/suplementos.png" },
-  { "id": "accesorios", "nombre": "Accesorios", "descripcion": "Shakers, botellas y bolsas para llevar tu estilo de vida a todas partes.", "imagen": "/img/categorias/accesorios.png" },
-  { "id": "recetas", "nombre": "Recetas Digitales", "descripcion": "Guías paso a paso para cocinar con intención y bienestar integral.", "imagen": "/img/categorias/recetas.png" }
+  {
+    "id": "snacks",
+    "nombre": "Snacks Saludables",
+    "descripcion": "Comidas energéticas y balanceadas para mantener tu energía a lo largo del día.",
+    "imagen": "/img/categorias/snacks.webp"
+  },
+  {
+    "id": "bebidas",
+    "nombre": "Bebidas Funcionales",
+    "descripcion": "Infusiones y bebidas diseñadas para apoyar tu salud mental y física.",
+    "imagen": "/img/categorias/bebidas.webp"
+  },
+  {
+    "id": "suplementos",
+    "nombre": "Suplementos",
+    "descripcion": "Vitaminas y proteínas para complementar tu alimentación.",
+    "imagen": null
+  },
+  {
+    "id": "accesorios",
+    "nombre": "Accesorios",
+    "descripcion": "Shakers, botellas y bolsas para llevar tu estilo de vida a todas partes.",
+    "imagen": "/img/categorias/accesorios.webp"
+  },
+  {
+    "id": "recetas",
+    "nombre": "Recetas Digitales",
+    "descripcion": "Guías paso a paso para cocinar con intención y bienestar integral.",
+    "imagen": "/img/categorias/recetas.webp"
+  }
 ]
