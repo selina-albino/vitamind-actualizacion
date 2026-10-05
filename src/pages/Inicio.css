@@ -1,0 +1,80 @@
+/* ===== Hero ===== */
+.hero {
+  display: grid;
+  gap: var(--space-5);
+  padding-block: var(--space-6);
+  align-items: center;
+}
+
+.hero__texto {
+  padding: var(--space-5);
+  border: 1px solid var(--color-borde);
+  border-radius: calc(var(--radio) * 2);
+}
+
+.hero__texto h1 { font-size: var(--escala-5); }
+.hero__acciones { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+/* ===== Secciones ===== */
+.seccion { padding-block: var(--space-6); }
+.seccion h2 { font-size: var(--escala-4); }
+.seccion__bajada { color: var(--color-texto-suave); max-width: 40ch; }
+.seccion__titulo-centrado { text-align: center; }
+
+/* ===== Categorías ===== */
+.categorias {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categoria {
+  display: block;
+  height: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+.categoria:hover { border-color: var(--color-primario); }
+.categoria:hover h3 { text-decoration: underline; }
+.categoria h3 { margin: var(--space-3) 0 var(--space-1); font-size: var(--escala-2); }
+.categoria p { margin: 0; color: var(--color-texto-suave); font-size: 0.9375rem; }
+
+/* ===== Productos destacados ===== */
+.grilla-productos {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+}
+
+/* ===== Beneficios ===== */
+.beneficios {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.beneficios h3 { font-size: var(--escala-2); margin-bottom: var(--space-1); }
+.beneficios p { color: var(--color-texto-suave); margin: 0; }
+
+/* ===== CTA ===== */
+.cta {
+  display: grid;
+  gap: var(--space-5);
+  align-items: center;
+  padding-block: var(--space-6);
+}
+.cta h2 { font-size: var(--escala-5); }
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  .hero,
+  .cta { grid-template-columns: 1fr 1fr; }
+}
