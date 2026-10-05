@@ -13,8 +13,9 @@ import Contacto from './pages/Contacto'
 export default function App() {
   return (
     <BrowserRouter>
+      <a href="#contenido" className="skip-link">Saltar al contenido</a>
       <Header />
-      <main>
+      <main id="contenido">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/productos" element={<Productos />} />

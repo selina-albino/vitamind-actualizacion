@@ -1,7 +1,8 @@
 export default function Contacto() {
   return (
-    <section>
+    <section className="contenedor">
       <h1>Contacto</h1>
+      <p>Pendiente de maquetar.</p>
     </section>
   )
 }
