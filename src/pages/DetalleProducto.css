@@ -41,6 +41,8 @@
 .detalle__acciones .boton { border-radius: 0.25rem; text-align: center; }
 .detalle__acciones a[aria-disabled="true"] { pointer-events: none; opacity: 0.55; }
 
+.detalle__aviso { font-weight: 600; color: var(--color-primario); }
+
 .detalle__descripcion { color: var(--color-texto-suave); }
 
 /* ===== Responsive ===== */

@@ -1,0 +1,26 @@
+.formulario { padding-block: var(--space-6); max-width: 40rem; }
+.formulario form { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
+
+.campo { display: grid; gap: var(--space-1); border: 0; margin: 0; padding: 0; }
+.campo label, .campo legend { font-weight: 600; color: var(--color-primario); }
+
+.campo input:not([type="radio"]),
+.campo textarea {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-borde);
+  border-radius: 0.5rem;
+  font: inherit;
+  background: #FFFFFF;
+}
+.campo input[aria-invalid="true"],
+.campo textarea[aria-invalid="true"] { border: 2px solid var(--color-error); }
+
+.campo__opcion { display: flex; align-items: center; gap: var(--space-2); font-weight: 400; cursor: pointer; }
+.campo__opcion input { accent-color: var(--color-primario); width: 1.1rem; height: 1.1rem; }
+
+.campo__error { margin: 0; color: var(--color-error); font-size: 0.9rem; font-weight: 600; }
+
+.formulario__exito { font-weight: 600; color: var(--color-primario); }
+
+.formulario .boton { justify-self: start; }

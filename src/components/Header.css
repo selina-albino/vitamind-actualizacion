@@ -21,7 +21,17 @@
 .header__nav a:hover { color: var(--color-primario); }
 .header__nav a.active { color: var(--color-primario); font-weight: 700; text-decoration: underline; text-underline-offset: 0.35em; }
 
-.header__carrito { color: var(--color-primario); display: inline-flex; }
+.header__carrito { color: var(--color-primario); display: inline-flex; align-items: center; gap: var(--space-1); text-decoration: none; }
+.header__contador {
+  min-width: 1.4rem;
+  padding: 0 var(--space-1);
+  border-radius: 999px;
+  background: var(--color-acento);
+  color: var(--color-primario);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
 
 /* ===== Responsive ===== */
 @media (min-width: 768px) {
