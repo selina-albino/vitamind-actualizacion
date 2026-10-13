@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import { useCarrito } from '../context/CarritoContext'
 import './Header.css'
 
 const enlaces = [
@@ -9,6 +10,8 @@ const enlaces = [
 ]
 
 export default function Header() {
+  const { cantidadTotal } = useCarrito()
+
   return (
     <header className="header">
       <div className="contenedor header__fila">
@@ -31,7 +34,8 @@ export default function Header() {
             <path d="M6 7h12l-1 13H7L6 7Z" />
             <path d="M9 7a3 3 0 0 1 6 0" />
           </svg>
-          <span className="visualmente-oculto">Carrito</span>
+          <span className="visualmente-oculto">Carrito, {cantidadTotal} productos</span>
+          {cantidadTotal > 0 && <span className="header__contador" aria-hidden="true">{cantidadTotal}</span>}
         </Link>
       </div>
     </header>

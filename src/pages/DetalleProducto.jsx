@@ -1,14 +1,18 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import ProductImage from '../components/ProductImage'
 import productos from '../data/productos.json'
 import { formatearPrecio } from '../utils/formato'
+import { useCarrito } from '../context/CarritoContext'
 import './DetalleProducto.css'
 
 export default function DetalleProducto() {
   const { id } = useParams()
   const producto = productos.find((p) => p.id === Number(id))
   const [cantidad, setCantidad] = useState(1)
+  const [agregado, setAgregado] = useState(false)
+  const { agregar } = useCarrito()
+  const navigate = useNavigate()
 
   if (!producto) {
     return (
@@ -24,8 +28,13 @@ export default function DetalleProducto() {
   const maximo = esDigital ? 1 : producto.stock
 
   function agregarAlCarrito() {
-    // Sprint 2 (HU04): conectar con el contexto del carrito.
-    console.log('Agregar al carrito', producto.id, cantidad)
+    agregar(producto, cantidad)
+    setAgregado(true)
+  }
+
+  function comprarAhora() {
+    agregar(producto, cantidad)
+    navigate('/checkout')
   }
 
   return (
@@ -57,10 +66,16 @@ export default function DetalleProducto() {
           <button type="button" className="boton boton--acento" onClick={agregarAlCarrito} disabled={agotado}>
             Agregar al carrito
           </button>
-          <Link to="/checkout" className="boton boton--primario" aria-disabled={agotado}>
+          <button type="button" className="boton boton--primario" onClick={comprarAhora} disabled={agotado}>
             Realizar compra
-          </Link>
+          </button>
         </div>
+
+        {agregado && (
+          <p className="detalle__aviso" role="status">
+            ✓ Agregado al carrito. <Link to="/carrito">Ver carrito</Link>
+          </p>
+        )}
 
         <p className="detalle__descripcion">{producto.descripcion}</p>
       </section>
